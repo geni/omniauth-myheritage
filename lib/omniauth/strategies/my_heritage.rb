@@ -42,7 +42,15 @@ module OmniAuth
       
       info do
         prune!({
+          'id'             => raw_info['id'],
+          'email'          => raw_info['email'],
           'name'           => raw_info['name'],
+          'first_name'     => raw_info['first_name'],
+          'last_name'      => raw_info['last_name'],
+          'gender'         => raw_info['gender'],
+          'birthday'       => raw_info['birth_date'],
+          'link'           => raw_info['link'],
+          'locale'         => raw_info['preferred_display_language']
         })
       end
       
