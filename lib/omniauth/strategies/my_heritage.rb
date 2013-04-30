@@ -32,7 +32,8 @@ module OmniAuth
           :code => request.params['code'],
           :redirect_uri => callback_url,
           :client_id => client.id,
-          :client_secret => client.secret
+          :client_secret => client.secret,
+          :grant_type => 'authorization_code'
         }
         client.get_token(token_params)
       end
