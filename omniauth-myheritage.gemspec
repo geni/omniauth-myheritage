@@ -3,12 +3,12 @@ $:.push File.expand_path('../lib', __FILE__)
 require 'omniauth/my_heritage/version'
 
 Gem::Specification.new do |s|
-  s.name     = 'omniauth-geni'
+  s.name     = 'omniauth-myheritage'
   s.version  = OmniAuth::MyHeritage::VERSION
   s.authors  = ['Michael Berkovich']
   s.email    = ['theiceberk@gmail.com']
   s.summary  = 'MyHeritage strategy for OmniAuth'
-  s.homepage = 'https://github.com/geni/omniauth-geni'
+  s.homepage = 'https://github.com/geni/omniauth-myheritage'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
